@@ -197,6 +197,19 @@ body {
   transform: translateY(0);
 }
 
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+}
+.card__side {
+  background-color: orangered;
+  height: 50rem;
+  transition: all 0.8s;
+}
+.card:hover .card__side {
+  transform: rotateY(180deg);
+}
+
 .composition {
   position: relative;
 }
@@ -328,6 +341,12 @@ body {
 }
 .section-features > * {
   transform: skewY(7deg);
+}
+
+.section-tours {
+  background-color: #f7f7f7;
+  padding: 25rem 0 50rem;
+  margin-top: -10rem;
 }
 
 /*# sourceMappingURL=main.css.map */
